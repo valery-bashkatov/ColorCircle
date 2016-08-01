@@ -4,21 +4,16 @@
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)]()
 
 ## Description
-The framework includes a set of useful for iOS development things.
-
-### Color Circle
-Control to select a color from the color circle.
-
+A control for selecting a color from the palette.
 
 ## Requirements
 - iOS 8.0+
 - Xcode 7.3+
 
-
 ## Installation
 ### Carthage
 
-To integrate `ToolKit` into your project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
+To integrate `ColorCircle` into your project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```
 github "valery-bashkatov/ColorCircle"
