@@ -1,0 +1,9 @@
+output: Reference
+clean: true
+sdk: iphone
+author: Valery Bashkatov
+author_url: http://valery.bashkatov.org
+module: ColorCircle
+readme: README.md
+min_acl: public
+theme: fullwidth
