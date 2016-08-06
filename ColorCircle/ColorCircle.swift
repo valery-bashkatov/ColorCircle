@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ToolKit
+import ColorModel
 
 /**
  The `ColorCircle` class implements the control to select a color from the color circle.

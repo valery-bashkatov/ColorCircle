@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833DC5C01D5670FB00ED9C75 /* ColorModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833DC5BF1D5670FB00ED9C75 /* ColorModel.framework */; };
 		83EBC7D01D4FDED200F38B8F /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBC7CE1D4FDED200F38B8F /* ColorCircle.swift */; };
 		83EBC7D11D4FDED200F38B8F /* ColorCircleImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EBC7CF1D4FDED200F38B8F /* ColorCircleImages.xcassets */; };
-		83EBC7D61D4FE06500F38B8F /* ToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EBC7D51D4FE06500F38B8F /* ToolKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		833DC5BF1D5670FB00ED9C75 /* ColorModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ColorModel.framework; path = Carthage/Build/iOS/ColorModel.framework; sourceTree = "<group>"; };
 		83EBC7C31D4FDE9000F38B8F /* ColorCircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorCircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EBC7C81D4FDE9000F38B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83EBC7CE1D4FDED200F38B8F /* ColorCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 		83EBC7CF1D4FDED200F38B8F /* ColorCircleImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorCircleImages.xcassets; sourceTree = "<group>"; };
-		83EBC7D21D4FDEE100F38B8F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		83EBC7D51D4FE06500F38B8F /* ToolKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToolKit.framework; path = Carthage/Build/iOS/ToolKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EBC7D61D4FE06500F38B8F /* ToolKit.framework in Frameworks */,
+				833DC5C01D5670FB00ED9C75 /* ColorModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +52,6 @@
 		83EBC7C51D4FDE9000F38B8F /* ColorCircle */ = {
 			isa = PBXGroup;
 			children = (
-				83EBC7D21D4FDEE100F38B8F /* README.md */,
 				83EBC7C81D4FDE9000F38B8F /* Info.plist */,
 				83EBC7CE1D4FDED200F38B8F /* ColorCircle.swift */,
 				83EBC7CF1D4FDED200F38B8F /* ColorCircleImages.xcassets */,
@@ -64,7 +62,7 @@
 		83EBC7D41D4FE04E00F38B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83EBC7D51D4FE06500F38B8F /* ToolKit.framework */,
+				833DC5BF1D5670FB00ED9C75 /* ColorModel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,7 +148,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ToolKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ColorModel.framework",
 			);
 			name = "Carthage Run Script";
 			outputPaths = (
