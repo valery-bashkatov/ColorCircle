@@ -2,7 +2,7 @@
 //  ColorCircle.swift
 //  ColorCircle
 //
-//  Created by Valery Bashkatov on 01.09.16.
+//  Created by Valery Bashkatov on 07.08.16.
 //  Copyright (c) 2016 Valery Bashkatov. All rights reserved.
 //
 
