@@ -6,6 +6,9 @@
 ## Description
 A control for selecting a color from the palette.
 
+## Appearance
+![ColorCircle Image](https://cloud.githubusercontent.com/assets/18283239/17461764/bfe16c1e-5ca8-11e6-9b6a-7c47992d0c29.png)
+
 ## Requirements
 - iOS 8.0+
 - Xcode 7.3+
@@ -21,7 +24,7 @@ To integrate `ColorCircle` into your project using [Carthage](https://github.com
 ```
 github "valery-bashkatov/ColorCircle"
 ```
-And then follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) to install the framework.
+And then follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) to install the framework and its dependencies.
 
 ## Usage
 
@@ -31,7 +34,11 @@ import ColorCircle
 
 let colorCircle = ColorCircle()
 
-colorCircle.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+colorCircle.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
+colorCircle.addTarget(self, action: #selector(changeColor(_:)), forControlEvents: .ValueChanged)
+
+view.addSubview(colorCircle)
 ```
 
 ### Interface Builder
+![ColorCircle Interface Builder](https://cloud.githubusercontent.com/assets/18283239/17461787/2c80a8d0-5ca9-11e6-884a-4866eaa9d5b9.png)
