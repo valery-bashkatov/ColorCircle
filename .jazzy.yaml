@@ -1,5 +1,5 @@
 output: Reference
-clean: true
+clean: false
 sdk: iphone
 author: Valery Bashkatov
 author_url: http://valery.bashkatov.org
