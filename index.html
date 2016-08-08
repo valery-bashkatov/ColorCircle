@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ColorCircle  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="ColorCircle  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          ColorCircle Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">ColorCircle Reference</a>
+      <img class="carat" src="img/carat.png" />
+      ColorCircle  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ColorCircle.html">ColorCircle</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#colorcircle' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='colorcircle'>ColorCircle</h1>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href=""><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg" alt="Platform"></a></p>
+<a href='#description' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='description'>Description</h2>
+
+<p>A control for selecting a color from the palette.</p>
+<a href='#appearance' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='appearance'>Appearance</h2>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18283239/17461764/bfe16c1e-5ca8-11e6-9b6a-7c47992d0c29.png" alt="ColorCircle Image"></p>
+<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+
+<ul>
+<li>iOS 8.0+</li>
+<li>Xcode 7.3+</li>
+</ul>
+<a href='#dependencies' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='dependencies'>Dependencies</h2>
+
+<ul>
+<li><a href="https://github.com/valery-bashkatov/ColorModel">ColorModel</a></li>
+</ul>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+
+<p>To integrate <code>ColorCircle</code> into your project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "valery-bashkatov/ColorCircle"
+</code></pre>
+
+<p>And then follow the <a href="https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos">instructions</a> to install the framework and its dependencies.</p>
+<a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='documentation'>Documentation</h2>
+
+<p>API Reference is located at <a href="http://valery-bashkatov.github.io/ColorCircle">http://valery-bashkatov.github.io/ColorCircle</a>.</p>
+<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<a href='#programmatically' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='programmatically'>Programmatically</h3>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">ColorCircle</span>
+
+<span class="k">let</span> <span class="nv">colorCircle</span> <span class="o">=</span> <span class="kt">ColorCircle</span><span class="p">()</span>
+
+<span class="n">colorCircle</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">colorCircle</span><span class="o">.</span><span class="nf">addTarget</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="err">#</span><span class="nf">selector</span><span class="p">(</span><span class="nf">changeColor</span><span class="p">(</span><span class="nv">_</span><span class="p">:)),</span> <span class="nv">forControlEvents</span><span class="p">:</span> <span class="o">.</span><span class="kt">ValueChanged</span><span class="p">)</span>
+
+<span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">colorCircle</span><span class="p">)</span>
+</code></pre>
+<a href='#interface-builder' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='interface-builder'>Interface Builder</h3>
+
+<p><img src="https://cloud.githubusercontent.com/assets/18283239/17461787/2c80a8d0-5ca9-11e6-884a-4866eaa9d5b9.png" alt="ColorCircle Interface Builder"></p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2016-08-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
