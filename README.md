@@ -1,7 +1,6 @@
 # ColorCircle
 The `ColorCircle` implements the control to select a color from the color circle.
 
-## Appearance
 ![ColorCircle Image](https://cloud.githubusercontent.com/assets/18283239/17461764/bfe16c1e-5ca8-11e6-9b6a-7c47992d0c29.png)
 
 ## Requirements
