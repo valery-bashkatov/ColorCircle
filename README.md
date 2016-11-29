@@ -31,9 +31,13 @@ import ColorCircle
 let colorCircle = ColorCircle()
 
 colorCircle.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
-colorCircle.addTarget(self, action: #selector(changeColor(_:)), for: .valueChanged)
+colorCircle.addTarget(self, action: #selector(changeColor), for: .valueChanged)
 
 view.addSubview(colorCircle)
+
+func changeColor() {
+    print(colorCircle.color)
+}
 ```
 
 ### Interface Builder
