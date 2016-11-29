@@ -3,7 +3,7 @@ build/
 DerivedData/
 
 ## Documentation
-Reference/
+Documentation/
 
 ## Various settings
 *.pbxuser

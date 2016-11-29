@@ -1,28 +1,22 @@
 # ColorCircle
-
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)]()
-
-## Description
-A control for selecting a color from the palette.
+The `ColorCircle` implements the control to select a color from the color circle.
 
 ## Appearance
 ![ColorCircle Image](https://cloud.githubusercontent.com/assets/18283239/17461764/bfe16c1e-5ca8-11e6-9b6a-7c47992d0c29.png)
 
 ## Requirements
-- iOS 8.0+
-- Xcode 7.3+
+- iOS 9.0+
+- Swift 3.0+
 
 ## Dependencies
 - [ColorModel](https://github.com/valery-bashkatov/ColorModel)
 
 ## Installation
 ### Carthage
-
 To integrate `ColorCircle` into your project using [Carthage](https://github.com/Carthage/Carthage), specify it in your `Cartfile`:
 
 ```
-github "valery-bashkatov/ColorCircle"
+github "valery-bashkatov/ColorCircle ~> 2.0.0"
 ```
 And then follow the [instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) to install the framework and its dependencies.
 
@@ -31,14 +25,13 @@ API Reference is located at [http://valery-bashkatov.github.io/ColorCircle](http
 
 ## Usage
 ### Programmatically
-
 ```swift
 import ColorCircle
 
 let colorCircle = ColorCircle()
 
 colorCircle.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
-colorCircle.addTarget(self, action: #selector(changeColor(_:)), forControlEvents: .ValueChanged)
+colorCircle.addTarget(self, action: #selector(changeColor(_:)), for: .valueChanged)
 
 view.addSubview(colorCircle)
 ```

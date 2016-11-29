@@ -1,4 +1,4 @@
-output: Reference
+output: Documentation
 clean: false
 sdk: iphone
 author: Valery Bashkatov
