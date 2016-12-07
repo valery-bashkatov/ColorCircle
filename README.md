@@ -23,7 +23,6 @@ And then follow the [instructions](https://github.com/Carthage/Carthage#if-youre
 API Reference is located at [http://valery-bashkatov.github.io/ColorCircle](http://valery-bashkatov.github.io/ColorCircle).
 
 ## Usage
-### Programmatically
 ```swift
 import ColorCircle
 
@@ -38,6 +37,3 @@ func changeColor() {
     print(colorCircle.color)
 }
 ```
-
-### Interface Builder
-![ColorCircle Interface Builder](https://cloud.githubusercontent.com/assets/18283239/17461787/2c80a8d0-5ca9-11e6-884a-4866eaa9d5b9.png)
