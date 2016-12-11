@@ -22,7 +22,7 @@ And then follow the [instructions](https://github.com/Carthage/Carthage#if-youre
 ## Documentation
 API Reference is located at [http://valery-bashkatov.github.io/ColorCircle](http://valery-bashkatov.github.io/ColorCircle).
 
-## Usage
+## Sample
 ```swift
 import ColorCircle
 
