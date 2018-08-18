@@ -8,6 +8,9 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
 
@@ -20,6 +23,12 @@
           ColorCircle Docs
         </a>
          (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
       </p>
     
         <p class="header-col header-col--secondary">
@@ -55,40 +64,40 @@
         <section class="section">
           <div class="section-content">
             
-            <a href='#colorcircle' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='colorcircle'>ColorCircle</h1>
+            <h1 id='colorcircle' class='heading'>ColorCircle</h1>
 
-<p><code>ColorCircle</code> is a control for color selection.</p>
+<p><code><a href="Classes/ColorCircle.html">ColorCircle</a></code> is a control for color selection.</p>
 
 <p><img src="https://cloud.githubusercontent.com/assets/18283239/17461764/bfe16c1e-5ca8-11e6-9b6a-7c47992d0c29.png" alt="ColorCircle Image"></p>
-<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+<h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
 <li>iOS 9.0+</li>
-<li>Swift 3.0+</li>
+<li>Swift 4.1+</li>
 </ul>
-<a href='#dependencies' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='dependencies'>Dependencies</h2>
+<h2 id='dependencies' class='heading'>Dependencies</h2>
 
 <ul>
 <li><a href="https://github.com/valery-bashkatov/ColorModel">ColorModel</a></li>
 </ul>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
-<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='carthage' class='heading'>Carthage</h3>
 
-<p>To integrate <code>ColorCircle</code> into your project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
-<pre class="highlight plaintext"><code>github "valery-bashkatov/ColorCircle" ~&gt; 2.0.0
+<p>To integrate <code><a href="Classes/ColorCircle.html">ColorCircle</a></code> into your project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "valery-bashkatov/ColorCircle" ~&gt; 3.0.0
 </code></pre>
 
 <p>And then follow the <a href="https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos">instructions</a> to install the framework and its dependencies.</p>
-<a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='documentation'>Documentation</h2>
+<h2 id='documentation' class='heading'>Documentation</h2>
 
 <p>API Reference is located at <a href="http://valery-bashkatov.github.io/ColorCircle">http://valery-bashkatov.github.io/ColorCircle</a>.</p>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
+<h2 id='usage' class='heading'>Usage</h2>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">ColorCircle</span>
 
 <span class="k">let</span> <span class="nv">colorCircle</span> <span class="o">=</span> <span class="kt">ColorCircle</span><span class="p">()</span>
 
 <span class="n">colorCircle</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">200</span><span class="p">)</span>
-<span class="n">colorCircle</span><span class="o">.</span><span class="nf">addTarget</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="err">#</span><span class="nf">selector</span><span class="p">(</span><span class="n">changeColor</span><span class="p">),</span> <span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">valueChanged</span><span class="p">)</span>
+<span class="n">colorCircle</span><span class="o">.</span><span class="nf">addTarget</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">changeColor</span><span class="kd">)</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">valueChanged</span><span class="p">)</span>
 
 <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">colorCircle</span><span class="p">)</span>
 
@@ -104,8 +113,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2017-01-02)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://valery.bashkatov.org" target="_blank" rel="external">Valery Bashkatov</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
