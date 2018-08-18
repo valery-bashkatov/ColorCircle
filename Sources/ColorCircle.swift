@@ -185,7 +185,7 @@ open class ColorCircle: UIControl {
      
      - parameter pinchGestureRecognizer: The `UIPinchGestureRecognizer` sender instance.
      */
-    func changeBrightness(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
+    @objc func changeBrightness(_ pinchGestureRecognizer: UIPinchGestureRecognizer) {
         let oldBrightness = colorModel.brightness
         let newBrightness = min(max(oldBrightness + ((pinchGestureRecognizer.velocity.sign == .minus) ? -1 : 1) / paletteRadius, 0), 1)
         
